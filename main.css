@@ -1,62 +1,102 @@
-#main{
-  height: 70%;
-  display: grid;
-  grid-gap: 10px;
-  margin-bottom: 50px;
-  border-top: solid;
-  border-bottom: solid;
-  border-width: 1px;
-  grid-template-columns: repeat(4, 50px);
-  grid-template-rows: 50px 4;
-  grid-template-areas:
-  "o two three a"
-  "four five six s"
-  "seven eight nine d"
-  "z m e e"
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+h1{
+  margin-left: 41%;
+}
+.numbers{
+  background-color: #96ceb4;
+}
+.operators{
+  background-color: #88d8b0;
 }
 
+.display, .clear{
+      background-color: #ff6f69;
+}
+
+.ans{
+      background-color: #ffcc5c;
+}
+html{
+  background: #ffeead;
+}
+#main{
+  margin-left: 40%;
+  margin-top: 10%;
+  height: 70%;
+  display: grid;
+  grid-gap: 5px;
+  margin-bottom: 50px;
+  border-width: 1px;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(6, 50px);
+  grid-template-areas:
+  "dis dis dis dis"
+  "o two three m"
+  "four five six s"
+  "seven eight nine a"
+  "z z e d"
+  "ans ans ans c"
+}
+.display{
+  justify-content: flex-end;
+}
 #add{
-grid-area: 'a';
+grid-area: a;
+}
+#clear{
+grid-area: c;
+}
+#dis{
+grid-area: dis;
+}
+#answer{
+grid-area: ans;
 }
 #sub{
-grid-area: 's';
+grid-area: s;
 }
 #mult{
-grid-area: 'm';
+grid-area: m;
 }
 #div{
-grid-area: 'd';
+grid-area: d;
 }
 #equal{
-grid-area: 'e';
+grid-area: e;
 }
 #zero{
-grid-area: 'z';
+grid-area: z;
 }
 #one{
-grid-area: 'o';
+grid-area: o;
 }
 #two{
-grid-area: 'two';
+grid-area: two;
 }
 #three{
-grid-area: 'three';
+grid-area: three;
 }
 #four{
-grid-area: 'four';
+grid-area: four;
 }
 #five{
-grid-area: 'five';
+grid-area: five;
 }
 #six{
-grid-area: 'six';
+grid-area: six;
 }
 #seven{
-grid-area: 'seven';
+grid-area: seven;
 }
 #eight{
-grid-area: 'eight';
+grid-area: eight;
 }
 #nine{
-grid-area: 'nine';
+grid-area: nine;
 }
