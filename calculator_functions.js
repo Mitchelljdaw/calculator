@@ -47,12 +47,12 @@ document.getElementById('dis').innerHTML = document.getElementById('answer').inn
 }
 
 function operators(input){
-  if(leftRight === false){
-    document.getElementById('dis').innerHTML += input;
-    leftOpp = document.getElementById('dis').innerHTML;
-  }
-  else{
-    document.getElementById('dis').innerHTML += input;
-    rightOpp = document.getElementById('dis').innerHTML;
-  }
+    if(leftRight === false){
+      document.getElementById('dis').innerHTML += input;
+      leftOpp = document.getElementById('dis').innerHTML;
+    }
+    else{
+      document.getElementById('dis').innerHTML += input;
+      rightOpp = document.getElementById('dis').innerHTML;
+    }
 }

@@ -5,6 +5,9 @@
   font-size: 2em;
   color: #ffeead;
 }
+.operators:hover, .numbers:hover, .clear:hover{
+  cursor: crosshair;
+}
 h1{
   margin-left: 41%;
 }
